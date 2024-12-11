@@ -1,5 +1,8 @@
 # V-pet Proyect
 
+This is the English version of the documentation.
+[Read the documentation in Spanish](README.md)
+
 * [Introducción](#introducción)
 * [Diario de desarrollo](#diario-de-desarrollo)
 * [Lista de características](#-lista-de-características)
