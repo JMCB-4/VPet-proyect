@@ -1,67 +1,67 @@
 # V-pet Proyect
 
 This is the English version of the documentation.
-[Read the documentation in Spanish](README.md)
+[Lee la documentación en Español](README.md)
 
-* [Introducción](#introducción)
-* [Diario de desarrollo](#diario-de-desarrollo)
-* [Lista de características](#-lista-de-características)
-* [Herramientas](#herramientas)
-
-
-## Introducción
-El proyecto que presento tiene como objetivo la creación de una **VPET** (Virtual Pet) interactiva, desarrollada utilizando JavaScript y la API de Kaplay. Este proyecto se llevará a cabo de manera gradual mientras continúo con mis estudios, lo que me permitirá aprender y mejorar mis habilidades de programación a medida que avanzo en el desarrollo.
-
-La idea central de la VPET es ofrecer una experiencia dinámica donde los usuarios puedan interactuar con una mascota virtual, alimentarla, cuidarla y observar cómo evoluciona en función de las decisiones que tomen.
-
-La elección de JavaScript y la API de Kaplay como herramientas clave para el desarrollo de este proyecto fue el resultado de la búsqueda de una alternativa similar a las tecnologías utilizadas en clase, pero con el objetivo de explorar nuevas opciones y evitar el uso de las mismas herramientas. Además, pretendo practicar el uso de Git y GitHub para gestionar el código y colaborar de manera más eficiente en el desarrollo del proyecto.
-
-Este proyecto no solo es un desafío técnico, sino también una oportunidad para aplicar mis conocimientos de programación en un proyecto práctico que combine elementos de diseño, interacción y desarrollo web. A través de esta experiencia, espero fortalecer mis capacidades y obtener un producto funcional que pueda seguir mejorando con el tiempo.
+* [Introduction](#Introduction)
+* [Development journal](#development-journal)
+* [Features](#features)
+* [Software](#software)
 
 
-## Diario de desarrollo
-Este diario de desarrollo tiene como objetivo documentar el progreso y los desafíos enfrentados en la creación de mi proyecto de VPET utilizando JavaScript y la API de Kaplay. A lo largo de este registro, se reflejarán las decisiones clave, los problemas técnicos y las soluciones implementadas, así como mis aprendizajes y reflexiones sobre las herramientas y el proceso de desarrollo. Será una herramienta útil para monitorear el avance del proyecto y evaluar mis habilidades a medida que avanzo en su construcción.
+## Introduction
+The project I present aims to create an interactive **VPET** (Virtual Pet), developed using JavaScript and the Kaplay API. This project will be carried out gradually while I continue with my studies, which will allow me to learn and improve my programming skills as I progress in the development.
 
-* [Creación de la idea](#creación-de-la-idea)
-* [Busqueda de herramientas y práctica](#busqueda-de-herramientas-y-práctica)
-* [Desarrollo de una interfaz](#desarrollo-de-una-interfaz)
-* [Añado animaciones](#añado-animaciones)
+The core idea of the VPET proyect is to offer a dynamic experience where users can interact with a virtual pet, feed it, take care of it and watch it evolve based on the decisions they make.
 
-### Creación de la idea
+The choice of JavaScript and the Kaplay API as key tools for the development of this project was the result of the search for an alternative similar to the technologies used in class, but with the aim of exploring new options and avoiding the use of the same tools. In addition, I intend to practice the use of Git and GitHub to manage the code and collaborate more efficiently in the development of the project.
+
+This project is not only a technical challenge, but also an opportunity to apply my programming skills in a practical project that combines elements of design, interaction and web development. Through this experience, I hope to strengthen my skills and obtain a functional product that I can continue to improve over time.
+
+
+## Development journal
+This development journal aims to document the progress and challenges faced in the creation of my VPET project using JavaScript and the Kaplay API. Throughout this log, it will reflect key decisions, technical issues and implemented solutions, as well as my learnings and reflections on the tools and the development process. It will be a useful tool to monitor the progress of the project and evaluate my skills as I progress in its construction.
+
+* [Creation of the idea](#creation-of-the-idea)
+* [Tool search and first practice](#tool-search-and-first-practice)
+* [Interface development](#interface-development)
+* [Animations](#animations)
+
+### Creation of the idea
 03-12-2024
 
-La idea principal del proyecto es crear una mascota virtual (VPet o Virtual Pet) que tenga diversas necesidades que el usuario debe satisfacer, como alimentarla cuando tenga hambre. Para ello, elaboré una lista de características y funcionalidades que quiero implementar, las cuales podrán ser ampliadas o ajustadas en función de la viabilidad técnica del proyecto. Dejaré la lista en un apartado abajo e iré actualizando a medida que sigo con el proyecto.
+The main idea of the project is to create a virtual pet (VPet or Virtual Pet) that has several needs that the user must satisfy, such as feeding it when it is hungry. To do this, I made a list of features and functionalities that I want to implement, which can be expanded or adjusted depending on the technical feasibility of the project. I will leave the list in a section below and will update it as I continue with the project.
 
-### Busqueda de herramientas y práctica
+### Tool search and first practice
 04-12-2024 ~ 05-12-2024
 
-El IDE que he seleccionado para el proyecto es **Visual Studio Code**, debido a su facilidad de uso, amplia personalización y la gran cantidad de documentación y tutoriales disponibles, lo que me permitirá resolver rápidamente cualquier error o problema que surja durante el desarrollo.
+The IDE I have selected for the project is **Visual Studio Code**, due to its ease of use, extensive customization and the large amount of documentation and tutorials available, which will allow me to quickly resolve any bugs or problems that arise during development.
 
-Para la implementación del proyecto, investigué diversas librerías y herramientas que pudieran facilitar el proceso. Tras una búsqueda exhaustiva, decidí utilizar **Kaplay**, una API de código abierto que emplea HTML5 y JavaScript para la creación de juegos web. Esta API destaca por su facilidad de integración y por la excelente documentación disponible en su [página web](https://kaplayjs.com/), que incluye ejemplos prácticos y la posibilidad de probar el código directamente en el sitio.
+For the implementation of the project, I researched various libraries and tools that could facilitate the process. After an exhaustive search, I decided to use **Kaplay**, an open source API that uses HTML5 and JavaScript for the creation of web games. This API stands out for its ease of integration and for the excellent documentation available on its [website](https://kaplayjs.com/), which includes practical examples and the possibility of testing the code directly on the site.
 
-Con el objetivo de familiarizarme con el nuevo entorno, leí la documentación y realicé el ejemplo introductorio que tienen como 'mi primer proyecto', en el cual desarrollé un juego inspirado en el estilo de [Chrome Dino](https://en.wikipedia.org/wiki/Dinosaur_Game).
+In order to familiarize myself with the new environment, I read the documentation and made the introductory example that they have as 'my first project', in which I developed a game inspired by the style of [Chrome Dino](https://en.wikipedia.org/wiki/Dinosaur_Game).
 
-### Desarrollo de una interfaz
+### Interface development
 06-12-2024 
 
-Creo el proyecto y desarrollo una interfaz inicial, que cuenta con una resolución predefinida, un fondo de color sólido, un sprite para la VPET y dos botones que, por el momento, no realizan ninguna acción
+I create the project and develop an initial interface, which has a predefined resolution, a solid color background, a sprite for the VPET and two buttons that, for the moment, do not perform any action.
 
-### Añado animaciones
+### Animations
 11-12-2024 
 
-Para darle más dinamismo al proyecto, he añadido una animación de Idle (la animación base del VPET). Además, he implementado un efecto en los botones: al pasar el ratón por encima, estos aumentan de tamaño, lo que crea una sensación de interacción y selección.
+To make my project looks more fun, I have added an Idle animation (the base animation of VPET). In addition, I have implemented an effect on the buttons: when you hover the mouse over them, they increase in size, which creates a sense of interaction and selection.
 
 
-## Lista de características
-  - ~Creación de una interfaz inicial~ (06-12-2024)
-  - ~Animaciones de idle para la VPET~ (11-12-2024)
-  - ~Efecto de selección en los botones~ (11-12-2024)
-  - Implementación de un sistema de hambre
-  - Implementación de un sistema de sed
-  - Implementación de un sistema de aburrimiento
+## Features
+  - ~Creation of an initial interface~ (06-12-2024)
+  - ~Idle animations for VPET~ (11-12-2024)
+  - ~Button selection effect~ (11-12-2024)
+  - Implementation of a hunger system
+  - Implementation of a thirst system
+  - Implementation of a boredom system
 
   
-## Herramientas
+## Software
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [Kaplay](https://kaplayjs.com/)
   
