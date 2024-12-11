@@ -7,31 +7,61 @@ kaplay({
     height: 640,
 });
 
-loadRoot("./"); // A good idea for Itch.io publishing later
+loadRoot("./"); // a good idea for Itch.io publishing later
 
-// loadSprite for the sprite of the vpet
+// load the sprite for the VPET and buttons
 loadSprite("vpet", "sprites/vpet.png");
 loadSprite("bttn1", "sprites/button1.png");
 loadSprite("bttn2", "sprites/button2.png");
 
-// Creaction of the const for the vpet
+// create the const for the VPET
 const vpet = add([
     sprite("vpet"),
-    pos(width()/2 - 40, height()/2 - 40),
     anchor("center"),
-    scale(3), 
+    scale(3),
+    animate(), 
+   
 ]);
-// Creation of the button for water
+
+// create a button to give water
 const button1 = add([
     sprite("bttn1"),
-    pos(60 ,height() - 200),
+    pos(150 ,height() - 150),
     scale(2),
     area(),
+    anchor("center"),
+    
 ]);
-// Creation of the button to check on thirst
+
+// create a button to check thirst
 const button2 = add([
     sprite("bttn2"),
-    pos(420,height() - 200),
+    pos(520,height() - 150),
     scale(2),
     area(),
+    anchor("center"),
+    
 ]);
+
+// animation for the VPET
+vpet.animate("pos", [vec2(300, 280), vec2(300, 260)], {
+    duration: 2,
+    direction: "ping-pong",
+});
+
+// add a selection effect to the button on hover
+button1.onHoverUpdate(() => {
+    button1.scale = vec2(2.2);
+});
+// end the effect when the hover ends
+button1.onHoverEnd(() => {
+    button1.scale = vec2(2)
+});
+// add a selection effect to the button on hover
+button2.onHoverUpdate(() => {
+    button2.scale = vec2(2.2);
+});
+// end the effect when the hover ends
+button2.onHoverEnd(() => {
+    button2.scale = vec2(2)
+});

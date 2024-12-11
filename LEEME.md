@@ -42,7 +42,6 @@ Con el objetivo de familiarizarme con el nuevo entorno, leí la documentación y
 
 Creo el proyecto y desarrollo una interfaz inicial, que cuenta con una resolución predefinida, un fondo de color sólido, un sprite para la VPET y dos botones que, por el momento, no realizan ninguna acción
 
-
 ### Añado animaciones
 11-12-2024 
 
@@ -51,12 +50,10 @@ Para darle más dinamismo al proyecto, he añadido una animación de Idle (la an
 
 ## Lista de características
   - ~Creación de una interfaz inicial~ (06-12-2024)
-  - ~Animaciones de idle para la VPET~ (11-12-2024)
-  - ~Efecto de selección en los botones~ (11-12-2024)
+  - Animaciones de idle para la VPET
   - Implementación de un sistema de hambre
   - Implementación de un sistema de sed
   - Implementación de un sistema de aburrimiento
-
 
   
 ## Herramientas
