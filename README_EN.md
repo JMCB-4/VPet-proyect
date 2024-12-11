@@ -1,7 +1,7 @@
 # V-pet Proyect
 
-Esta es la versión en español de la documentación.
-[Read the documentation in English](README_EN.md)
+This is the English version of the documentation.
+[Read the documentation in Spanish](README.md)
 
 * [Introducción](#introducción)
 * [Diario de desarrollo](#diario-de-desarrollo)
