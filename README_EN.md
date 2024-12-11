@@ -2,6 +2,7 @@
 
 * [Introducción](#introducción)
 * [Diario de desarrollo](#diario-de-desarrollo)
+* [Lista de características](#-lista-de-características)
 * [Herramientas](#herramientas)
 
 
@@ -50,7 +51,8 @@ Para darle más dinamismo al proyecto, he añadido una animación de Idle (la an
 
 ## Lista de características
   - ~Creación de una interfaz inicial~ (06-12-2024)
-  - Animaciones de idle para la VPET
+  - ~Animaciones de idle para la VPET~ (11-12-2024)
+  - ~Efecto de selección en los botones~ (11-12-2024)
   - Implementación de un sistema de hambre
   - Implementación de un sistema de sed
   - Implementación de un sistema de aburrimiento

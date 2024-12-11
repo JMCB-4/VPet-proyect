@@ -2,6 +2,7 @@
 
 * [Introducción](#introducción)
 * [Diario de desarrollo](#diario-de-desarrollo)
+* [Lista de características](#-lista-de-características)
 * [Herramientas](#herramientas)
 
 
