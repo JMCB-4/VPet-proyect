@@ -44,7 +44,7 @@ const button2 = add([
 ]);
 
 // animation for the VPET
-vpet.animate("pos", [vec2(300, 280), vec2(300, 260)], { // animate the vpet giving it movement
+vpet.animate("pos", [vec2(300, 300), vec2(300, 320)], { // animate the vpet giving it movement
     duration: 2, // duration of the animation
     direction: "ping-pong", // type of animation
 });
@@ -64,4 +64,67 @@ button2.onHoverUpdate(() => {
 // end the effect when the hover ends
 button2.onHoverEnd(() => {
     button2.scale = vec2(2) // reset set scale when hover ends
+});
+
+loadSprite("meat", "sprites/meat.png", {
+    sliceX: 2, // how many sprites are in the X axis
+    sliceY: 2, // how many sprites are in the Y axis
+    anims: {
+        meat0: { from: 3, to: 3 },
+        meat1: { from: 2, to: 2 },
+        meat2: { from: 1, to: 1 },
+        meat3: { from: 0, to: 0 },
+    }
+});
+
+const meat = add ([
+    sprite("meat", {
+        frame: 1, // the frame of the sprite
+        anim: "meat3", // the animation to play at the start
+    }),
+    pos(width()/2, 90),
+    anchor("center"),
+    scale(2),
+]);
+
+
+var hunger = 3;
+
+button2.onClick(() => {
+    debug.log(hunger)
+});
+
+loop(500, () => {
+    if(hunger <= 0){
+        hunger = 0;
+    }
+    else{
+        hunger --;
+    }
+});
+
+onUpdate(() => {
+    switch (hunger) {
+        case 3:
+            meat.play("meat3")
+            break;
+        case 2:
+            meat.play("meat2");
+            break;
+        case 1:
+            meat.play("meat1");
+            break;
+        case 0:
+            meat.play("meat0");
+            break;
+    }
+});
+
+button1.onClick(() => {
+    if(hunger >= 3) {
+        hunger = 3;
+    }
+    else {
+        hunger++;
+    }
 });
