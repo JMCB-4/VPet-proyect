@@ -26,6 +26,7 @@ Este diario de desarrollo tiene como objetivo documentar el progreso y los desaf
 * [Busqueda de herramientas y práctica](#busqueda-de-herramientas-y-práctica)
 * [Desarrollo de una interfaz](#desarrollo-de-una-interfaz)
 * [Añado animaciones](#añado-animaciones)
+* [Sistema de hambre](#sistema-de-hambre)
 
 ### Creación de la idea
 03-12-2024
@@ -52,12 +53,17 @@ Creo el proyecto y desarrollo una interfaz inicial, que cuenta con una resoluci�
 
 Para darle más dinamismo al proyecto, he añadido una animación de Idle (la animación base del VPET). Además, he implementado un efecto en los botones: al pasar el ratón por encima, estos aumentan de tamaño, lo que crea una sensación de interacción y selección.
 
+### Sistema de hambre
+16-12-2024 
+
+He creado un sistema de hambre para la mascota virtual. La mascota gana hambre en función del tiempo que pasa, y para alimentarla, es necesario presionar el botón A. El botón B muestra en la consola el nivel de hambre de la VPET, con un valor de 0 a 3, donde 0 significa que está completamente hambrienta. Para hacerlo más comprensible visualmente, he creado una barra de hambre que se va llenando a medida que la mascota come. La idea es que, en el futuro, el botón B muestre también el estado completo de la VPET.
+
 
 ## Lista de características
   - ~Creación de una interfaz inicial~ (06-12-2024)
   - ~Animaciones de idle para la VPET~ (11-12-2024)
   - ~Efecto de selección en los botones~ (11-12-2024)
-  - Implementación de un sistema de hambre
+  - ~Implementación de un sistema de hambre~ (15-12-2024)
   - Implementación de un sistema de sed
   - Implementación de un sistema de aburrimiento
 
