@@ -88,23 +88,23 @@ const meat = add ([
 ]);
 
 
-var hunger = 3;
+var hunger = 3; // variable for hunger
 
-button2.onClick(() => {
-    debug.log(hunger)
+button2.onClick(() => { // button 2 on click show the debug
+    debug.log(hunger) // display the hunger level on the console
 });
 
-loop(500, () => {
-    if(hunger <= 0){
-        hunger = 0;
+loop(500, () => { // every 500 seconds
+    if(hunger <= 0){ // if the hunger value is 0 or less 
+        hunger = 0; // equals to 0
     }
-    else{
-        hunger --;
+    else{ // if not
+        hunger --; // hunger get -1
     }
 });
 
-onUpdate(() => {
-    switch (hunger) {
+onUpdate(() => { 
+    switch (hunger) { // changes the hunger bar according to the hunger level
         case 3:
             meat.play("meat3")
             break;
@@ -120,7 +120,7 @@ onUpdate(() => {
     }
 });
 
-button1.onClick(() => {
+button1.onClick(() => { // feed the pet
     if(hunger >= 3) {
         hunger = 3;
     }
