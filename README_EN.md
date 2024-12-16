@@ -26,6 +26,7 @@ This development journal aims to document the progress and challenges faced in t
 * [Tool search and first practice](#tool-search-and-first-practice)
 * [Interface development](#interface-development)
 * [Animations](#animations)
+* [Hunger system](#hunger-system)
 
 ### Creation of the idea
 03-12-2024
@@ -51,12 +52,18 @@ I create the project and develop an initial interface, which has a predefined re
 
 To make my project looks more fun, I have added an Idle animation (the base animation of VPET). In addition, I have implemented an effect on the buttons: when you hover the mouse over them, they increase in size, which creates a sense of interaction and selection.
 
+### Hunger system
+16-12-2024 
+
+I have created a hunger system for the virtual pet. The pet gains hunger according to the time it spends, and to feed it, it is necessary to press button A. Button B displays on the console the VPET's hunger level, with a value from 0 to 3, where 0 means that it is completely hungry. To make it more visually understandable, I have created a hunger bar that fills up as the pet eats. The idea is that, in the future, button B will also show the full VPET status.
+
+Translated with DeepL.com (free version)
 
 ## Features
   - ~Creation of an initial interface~ (06-12-2024)
   - ~Idle animations for VPET~ (11-12-2024)
   - ~Button selection effect~ (11-12-2024)
-  - Implementation of a hunger system
+  - ~Implementation of a hunger system~ (16-12-2024)
   - Implementation of a thirst system
   - Implementation of a boredom system
 
